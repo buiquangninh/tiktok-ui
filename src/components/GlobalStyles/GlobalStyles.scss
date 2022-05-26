@@ -4,7 +4,9 @@
 :root {
     --primary: #fe2c55;
     --black: #000;
+    --white: #fff;
     --gray: rgba(22, 24, 35, 0.34);
+    --text-color: #161823;
 
     --default-layout-header-height: 60px;
     --default-layout-container-width: 1150px;
@@ -16,6 +18,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
 
     &::-webkit-scrollbar {
         border-radius: 0;
@@ -38,8 +41,20 @@ html {
 }
 
 body {
-    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
+    color: var(--text-color);
+}
+
+button,
+input,
+[tabindex] {
+    border: none;
+    outline: none;
+}
+
+a[href] {
+    color: var(--text-color);
+    text-decoration: none;
 }

@@ -1,0 +1,109 @@
+.wrapper {
+    min-width: 100px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    cursor: pointer;
+    padding: 7px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    border: 1px solid transparent;
+    user-select: none;
+
+    + .wrapper {
+        margin-left: 16px;
+    }
+
+    &.disabled {
+        pointer-events: none;
+        color: rgba(22, 24, 35, 0.34);
+        border-color: rgba(22, 24, 35, 0.12);
+        background-color: rgba(22, 24, 35, 0.06);
+    }
+}
+
+.rounded {
+    box-shadow: 0 2px 8px rgb(0 0 0 / 6%);
+    border-radius: 52px;
+    cursor: pointer;
+    padding: 0 8px;
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 14px;
+    border: 1px solid rgba(22, 24, 35, 0.12);
+    color: rgba(22, 24, 35, 0.75);
+
+    &:hover {
+        border-color: rgba(22, 24, 35, 0.2);
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+}
+
+.primary {
+    background-color: var(--primary);
+    color: var(--white);
+    border-color: var(--primary);
+
+    &:hover {
+        border-color: var(--primary);
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.06)), #fe2c55;
+    }
+}
+
+.outline {
+    border-color: var(--primary);
+    color: var(--primary);
+
+    &:hover {
+        border-color: var(--primary);
+        background-color: rgba(254, 44, 85, 0.06);
+    }
+
+    &.disabled {
+        background-color: rgba(255, 255, 255, 1);
+    }
+}
+
+.secondary {
+    border: 1px solid rgba(22, 24, 35, 0.12);
+    color: var(--text-color);
+
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+
+    &.disabled {
+        background-color: rgba(255, 255, 255, 1);
+    }
+}
+
+.small {
+    min-width: 88px;
+    padding: 2px 15px;
+}
+
+.large {
+    padding: 12px 15px;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.icon-left,
+.icon-right {
+    display: inline-block;
+    width: 24px;
+    text-align: center;
+}
+
+.icon-left {
+    margin-right: 8px;
+}
+
+.icon-right {
+    margin-left: 8px;
+}
