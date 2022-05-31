@@ -1,5 +1,4 @@
 .menu-list {
-    box-shadow: rgb(0 0 0 / 12%) 0px 4px 16px;
     background-color: var(--white);
     width: 230px;
 
@@ -17,12 +16,15 @@
         line-height: 22px;
         border-radius: 0;
 
+        &.seperate {
+            border-top: 1px solid rgba(22, 24, 35, 0.12);
+        }
+
         &:hover {
             background-color: rgba(22, 24, 35, 0.03);
         }
     }
 }
-
 
 .header {
     position: relative;

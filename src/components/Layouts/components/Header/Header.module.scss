@@ -130,3 +130,21 @@
         background-color: transparent;
     }
 }
+
+.action-btn {
+    font-size: 24px;
+    background-color: transparent;
+    margin-left: 24px;
+}
+
+.user-avater {
+    margin-left: 24px;
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background: center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
