@@ -6,8 +6,6 @@ import styles from './image.module.scss';
 function Image({ src, alt, className, fallBack: customFallBack = images.noImage, ...props }, ref) {
     const [fallBack, setFallBack] = useState('');
 
-    console.log(customFallBack);
-
     const handleError = () => {
         setFallBack(customFallBack);
     };

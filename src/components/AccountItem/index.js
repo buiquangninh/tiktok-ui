@@ -2,6 +2,7 @@ import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames/bind';
 import styles from './AccountItem.module.scss';
+import Image from '~/components/Image';
 
 const cx = classNames.bind(styles);
 
@@ -9,9 +10,9 @@ function AccountItem() {
     return (
         <div className={cx('wrapper')}>
             <span className={cx('box-avatar')}>
-                <img
+                <Image
                     className={cx('avatar')}
-                    src="https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/e99846f00ab6702d7716ba8d72a98d7a~c5_300x300.webp?x-expires=1653408000&x-signature=04TK053mtxxV18DLC%2BnnqqpfR%2F8%3D"
+                    src="https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/a187c4dfa896a5ea449a4c5d3927b20a~c5_100x100.jpeg?x-expires=1654178400&x-signature=euAa9W7%2FIIjo0UpMbEz1GjSHflo%3D"
                     alt=""
                 />
             </span>
